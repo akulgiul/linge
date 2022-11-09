@@ -1,6 +1,5 @@
 # Exercise 4.11: Test Straight Line Requirement
 
-import numpy as np
 import random
 
 
