@@ -1,5 +1,4 @@
 # Exercise 4.11: Test Straight Line Requirement
-
 import random
 
 
