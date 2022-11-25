@@ -2,7 +2,8 @@
 import random
 
 
-def f(x): return 4 * x + 1
+def f(x):
+    return 4 * x + 1
 
 
 # draw 100 random values between 0 and 10

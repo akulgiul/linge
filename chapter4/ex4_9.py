@@ -2,8 +2,12 @@
 import numpy as np
 
 
-def f(x): return x
-def g(x): return x ** 2
+def f(x):
+    return x
+
+
+def g(x):
+    return x**2
 
 
 N = int(input("How many steps on interval [-4, 4]?\n"))
@@ -14,7 +18,7 @@ crossing_points = []
 
 for x in interval:
     difference = abs(f(x) - g(x))
-    if (difference < epsilon):
+    if difference < epsilon:
         crossing_points.append(x)
 
 print("crossing points are:")

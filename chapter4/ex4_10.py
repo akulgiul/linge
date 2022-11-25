@@ -12,7 +12,7 @@ def interpolate(measurements, delta, time):
 
     # finding i such that t_i <= time <= t_i+1
     i = 0
-    while (i * delta < time):
+    while i * delta < time:
         i += 1
     print(f"i: {i}")
 
@@ -37,7 +37,8 @@ delta = interval[1]
 print(f"interval from {interval[0]} to {interval[N - 1]}\ndelta: {delta}")
 
 
-def f(x): return x ** 2
+def f(x):
+    return x**2
 
 
 y_values = [f(x) for x in interval]

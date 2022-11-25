@@ -18,20 +18,21 @@ a = 1
 b = 0
 
 
-def f(x): return a * x + b
+def f(x):
+    return a * x + b
 
 
-while (True):
+while True:
     a = float(input("Please enter the slope of f: "))
     b = float(input("Please enter the value of b: "))
-    if (a < 0):
+    if a < 0:
         break
 
     f_values = [f(x) for x in range(0, 7)]
     error = error_function(x_values, y_values, a, b)
 
     plt.plot(f_values, color="red")
-    plt.plot(x_values, y_values, '*', color="green")
+    plt.plot(x_values, y_values, "*", color="green")
     plt.grid("on")
     plt.axis([-1, 6, -1, 8])
     plt.text(-0.9, -0.9, f"Error: {error}")
